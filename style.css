@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+box-sizing: border-box;
+font-family: "Inter", sans-serif;
+
+}
+
+body {
+    width:100%;
+    min-height:100vh;
+    background: linear-gradient(#EEEEFF,#ffffff);
+}
+#chatbot-toggler{
+    position: fixed;
+    bottom: 30px;
+    right: 35px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #c450c2;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1,);
+    transition: all 0.2s ease;
+    
+}
+
+body.show-chatbot #chatbot-toggler{
+    transform: rotate(90deg);
+}
+
+#chatbot-toggler span{
+    color: #fff;
+    position: absolute;
+}
+
+#chatbot-toggler span:last-child,
+body.show-chatbot #chatbot-toggler span:first-child{
+    opacity: 0;
+}
+
+body.show-chatbot #chatbot-toggler span: last-child {
+    opacity: 1;
+}
+
+.chatbot-popup{
+    position: fixed;
+    right: 35px;
+    bottom: 90px;
+    width: 420px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.2);
+    transform-origin: bottom right;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1,),
+    0 32px 64px --48px rgba(0, 0, 0, 0.5,);
+    transition: all 0.1s ease;
+}
+
+body.show-chatbot .chatbot-popup{
+opacity: 1;
+pointer-events: auto;
+transform: scale(1);
+}
+
+.chat-header .header-info{
+    display: flex;
+    align-items: center;
+    padding: 15px 22px;
+    background: #5350c4;
+    justify-content: space-between;
+}
+
+.chat-header .header-info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-info .chatbot-logo{
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+    fill: antiquewhite;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.header-info .logo-text{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.35rem;
+    letter-spacing: 0.03rem;
+}
+
+.chat-header #close-chatbot{
+    border: none;
+    color: #fff;
+    height: 40px;
+    width: 50px;
+    
+}
