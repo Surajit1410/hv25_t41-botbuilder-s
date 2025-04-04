@@ -59,9 +59,17 @@ const knowledgeBase = [
     question: "do you know the procedure about the procedures and courses offered by sit", answer: "I can certainly provide an overview of the procedures and courses typically offered at Siliguri Institute of Technology (SIT). However, for the most accurate and up-to-date details, especially regarding admissions, eligibility, or course specifics, it's always best to visit the official website or contact the college directly."
   },
   {
-    question: "provide details about the courses", answer: "Here's a general overview:\n1. Courses Offered: SIT primarily offers undergraduate (B.Tech) and postgraduate (M.Tech) courses in various engineering disciplines. \nSome of the popular courses are:\n\nUndergraduate Programs (B.Tech): \n~Computer Science and Engineering (CSE)\nElectronics and Communication Engineering (ECE)\n~Electrical Engineering (EE)\n~Civil Engineering (CE)\nInformation Technology (IT).\n~Postgraduate Programs (M.Tech):\n~Computer Science and Engineering (CSE)\n~Electronics and Communication Engineering \n~(ECE)Structural Engineering (Civil)"
+    question: "provide details about the courses", answer: "Here's a general overview:\n1. Courses Offered: SIT primarily offers undergraduate (B.Tech) and postgraduate (M.Tech) courses in various engineering disciplines. \nSome of the popular courses are:\n\nUndergraduate Programs (B.Tech): \n~Computer Science and Engineering (CSE)\nElectronics and Communication Engineering (ECE)\n~Electrical Engineering (EE)\n~Civil Engineering (CE)\nInformation Technology (IT).\n\nPostgraduate Programs (M.Tech):\n~Computer Science and Engineering (CSE)\n~Electronics and Communication Engineering (ECE) \n~Structural Engineering (Civil)\n\nThese courses are designed to prepare students for both theoretical and practical aspects of their respective fields."
   },
-
+  {
+    question: "Explain the admission procedure for btech", answer: "Admission Procedure:For B.Tech:\n\nEligibility Criteria: \nCandidates should have passed 10+2with Physics, Chemistry, and Mathematics as the mainsubjects, and a minimum aggregate percentage (usually45% to 50%) depending on the course.\n\nEntrance Exam: \nAdmission is based on WBJEE (West BengalJoint Entrance Examination) or JEE Main scores. Studentscan also apply through the Management Quota, but thiswould involve direct admission.\n\nApplication Process: Students need to apply through theofficial SIT portal after qualifying the entrance examsThere may be a separate online application process formanagement quota admissions."},
+  {
+    question: "Explain the admission procedure for mtech", answer: "For M.Tech:\n\nEligibility Criteria: \nCandidates should have a B.Tech equivalent degree in the relevant field from recognized university.\n\nEntrance Exam: Admission to M.Tech courses typicallrequires a valid score in the GATE exam. Some seats maalso be available through other state-level exams omanagement quota.\n\nApplication Process: The application is usuallavailable online, and candidates need to submit theidetails and required documents."
+  },
+  {
+    question: "Tell me a joke.", answer: "Why don't skeletons fight each other? They don't have the guts!"
+  },
+  
 ];
 
 // Create message element with dynamic classes
